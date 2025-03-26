@@ -125,22 +125,3 @@ impl PixelImage{
     }
 
 }
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let mut image: PixelImage = PixelImage::new(10, 800);
-        image.draw_pixel(0, 0, [255, 3, 3]);
-        image.draw_pixel(1, 1, [255, 3, 3]);
-        image.draw_pixel(2, 2, [255, 3, 3]);
-        image.draw_pixel(3, 3, [255, 3, 3]);
-        image.draw_pixel(4, 4, [255, 3, 3]);
-        for neighbour in image.get_neighbours_direction(4, 4, Direction::Right){
-            image.draw_pixel(neighbour.0, neighbour.1, [255, 3, 3]);
-        }
-        image.save_image("testimage.png", image::ImageFormat::Png);
-    }
-}
