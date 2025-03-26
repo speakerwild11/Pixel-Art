@@ -2,7 +2,7 @@
 A simple Rust crate for creating pixel art images with the image crate. Supports additional functionality for fetching pixel neighbours.
 
 ## Usage
-```
+```rust
 use pixel_art::PixelImage;
 
 //Instantiate image. First parameter is the resolution of each pixel. Second is the resolution of the image. 800 = 800x800
