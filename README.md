@@ -12,10 +12,10 @@ let mut img: PixelImage = PixelImage::new(10, 800);
 img.draw_pixel(2, 3, [255, 2, 2]);
 
 //Get pixel neighbour coordinates in tuple arrays.
-img.get_neighbours_all(x, y) -> All neighbours.
-img.get_neighbours_adjascent(x, y) -> All directly adjascent neighbours.
-img.get_neighbours_diagonal(x, y) -> All diagonally adjascent neighbours.
-img.get_neighbours_direction(x, y, Direction) -> All neighbours in a certain direction: Up, Down, Left, Right
+img.get_neighbours_all(x, y) -> //All neighbours.
+img.get_neighbours_adjascent(x, y) -> //All directly adjascent neighbours.
+img.get_neighbours_diagonal(x, y) -> //All diagonally adjascent neighbours.
+img.get_neighbours_direction(x, y, Direction) -> //All neighbours in a certain direction: Up, Down, Left, Right
 
 //Save image.
 img.save_image(path, ImageFormat);
